@@ -1,0 +1,35 @@
+## Pure Monochrome (Schwarz/Weiß/Grau)
+
+[colors.primary]
+background = "#121212"
+foreground = "#E0E0E0"
+
+[colors.cursor]
+text   = "#121212"
+cursor = "#E0E0E0"
+
+[colors.selection]
+text       = "#121212"
+background = "#E0E0E0"
+
+# Normal Colors (Graustufen statt Farben)
+[colors.normal]
+black   = "#1E1E1E"
+red     = "#D9777F"   # Milder Rot-Akzent für Fehler
+green   = "#8FA98F"   # Milder Grün-Akzent
+yellow  = "#D9C182"   # Milder Gelb-Akzent
+blue    = "#A0A0A0"   # Neutrales Hellgrau (statt Blau)
+magenta = "#B5B5B5"   # Neutrales Grau
+cyan    = "#CCCCCC"   # Helles Grau/Weiß für Labels (statt Türkis)
+white   = "#E0E0E0"
+
+# Bright Colors
+[colors.bright]
+black   = "#505050"
+red     = "#E08B92"
+green   = "#A3C0A3"
+yellow  = "#E5D196"
+blue    = "#C0C0C0"
+magenta = "#D0D0D0"
+cyan    = "#FFFFFF"   # Reines Weiß
+white   = "#FFFFFF"
