@@ -35,9 +35,19 @@ WINIT_X11_SCALE_FACTOR = "1.0"
 [window]
 position = "None"
 dynamic_padding = true
-decorations = "full"
-opacity = 0.75
-blur = true
+## decorations: Hyprland zeichnet keine serverseitigen Fensterrahmen. Bei "full"
+##   malt Alacritty daraufhin eine eigene Titelleiste, die im Kachel-Layout nur
+##   Platz kostet. "none" ist unter Wayland/Hyprland der richtige Wert.
+decorations = "none"
+
+## opacity/blur: beide bewusst aus. In ~/.config/caelestia/hypr-vars.lua steht
+##   blurEnabled = false und windowOpacity = 1, in shell.json ausserdem
+##   transparency.enabled = false. Mit opacity 0.75 war das Terminal das einzige
+##   durchsichtige Fenster im System - und zwar OHNE Blur, also Text direkt ueber
+##   dem Hintergrundbild. blur = true lief dabei ins Leere: den Effekt liefert
+##   der Compositor, nicht Alacritty, und im Compositor ist er abgeschaltet.
+opacity = 0.8
+blur = false
 startup_mode = "Windowed"
 dynamic_title = true
 class = { instance = "Alacritty", general = "Alacritty" }
@@ -103,3 +113,8 @@ renderer = "None"
 print_events = false
 highlight_damage = false
 prefer_egl = false
+
+[[keyboard.bindings]]
+key = "Return"
+mods = "Shift"
+chars = "\u001B\r"
