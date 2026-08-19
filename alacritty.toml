@@ -9,10 +9,6 @@
 ## Import additional configuration files.
 import = ["~/.config/alacritty/colors.toml", "~/.config/alacritty/fonts.toml"]
 
-## You can set shell.program to the path of your favorite shell, e.g. /bin/zsh.
-## Entries in shell.args are passed as arguments to the shell.
-#shell = { program = "/bin/zsh", args = ["--login"] }
-
 ## Directory the shell is started in. When this is unset, or "None",
 ## the working directory of the parent process will be used.
 #working_directory = "None"
@@ -30,6 +26,10 @@ ipc_socket = true
 [env]
 TERM = "alacritty"
 WINIT_X11_SCALE_FACTOR = "1.0"
+
+[terminal.shell]
+program = "cmd.exe"
+args = ["/k", "cls && fastfetch && cd C:\\Users\\lauer"]
 
 ## WINDOW ---------------------------------------------------------
 [window]
@@ -119,3 +119,5 @@ prefer_egl = false
 key = "Return"
 mods = "Shift"
 chars = "\u001B\r"
+
+[terminal]
