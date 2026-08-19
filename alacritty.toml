@@ -38,7 +38,8 @@ dynamic_padding = true
 ## decorations: Hyprland zeichnet keine serverseitigen Fensterrahmen. Bei "full"
 ##   malt Alacritty daraufhin eine eigene Titelleiste, die im Kachel-Layout nur
 ##   Platz kostet. "none" ist unter Wayland/Hyprland der richtige Wert.
-decorations = "none"
+##   "full" ist unter Windows der richtige Wert.
+decorations = "full"
 
 ## opacity/blur: beide bewusst aus. In ~/.config/caelestia/hypr-vars.lua steht
 ##   blurEnabled = false und windowOpacity = 1, in shell.json ausserdem
@@ -55,7 +56,7 @@ decorations_theme_variant = "Dark"
 
 ## Number of lines/columns (not pixels) in the terminal.
 [window.dimensions]
-columns = 103
+columns = 120
 lines = 32
 
 ## Blank space added around the window in pixels.
