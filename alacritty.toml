@@ -29,7 +29,7 @@ WINIT_X11_SCALE_FACTOR = "1.0"
 
 [terminal.shell]
 program = "cmd.exe"
-args = ["/k", "cls && fastfetch && cd C:\\Users\\lauer"]
+args = ["/k", "cls && fastfetch && if /I \"%cd%\"==\"C:\\Windows\\System32\" cd /d C:\\Users\\lauer"]
 
 ## WINDOW ---------------------------------------------------------
 [window]
